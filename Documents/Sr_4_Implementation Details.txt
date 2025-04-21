@@ -42,8 +42,8 @@ This module connects external models and services.
 
 -Deep Translator API: 
   - Uses `GoogleTranslator` for multilingual support.
-
 -Miscellaneous Functions: 
   - `reset_conversation()`: Clears chat history.  
   - `footer()`: Adds a footer for UI consistency.
+
 
