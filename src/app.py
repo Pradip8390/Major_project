@@ -10,9 +10,11 @@ from deep_translator import GoogleTranslator
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import google.generativeai as genai
 
+
 # Set the Streamlit page configuration and theme
 st.set_page_config(page_title="SAHAB", layout="wide")
 st.header("SMART AUTOMATED HIERARCHICAL ANALYSIS BOT")
+
 
 # Sidebar configuration
 with st.sidebar:
