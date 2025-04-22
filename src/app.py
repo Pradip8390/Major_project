@@ -17,6 +17,7 @@ st.header("SMART AUTOMATED HIERARCHICAL ANALYSIS BOT")
 
 
 # Sidebar configuration
+
 with st.sidebar:
     st.title("S.A.H.A.B")
     col1, col2, col3 = st.columns([1, 30, 1])
