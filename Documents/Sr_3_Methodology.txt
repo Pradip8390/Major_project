@@ -1,63 +1,53 @@
 Your AI chatbot for the Department of Justice website can be broken down into three key modules:
 
----
-
-### **1. User Interface & Interaction Module (Frontend)**
+1. User Interface & Interaction Module (Frontend):
 This module is responsible for the chatbot's appearance and user interaction.
 
-- **Streamlit UI Setup:**  
+- Streamlit UI Setup:  
   - Configures the chatbot’s layout (`st.set_page_config()`, `st.header()`).
   - Sidebar contains options like "Online Mode" toggle and language selection.
   - Hides Streamlit’s default UI elements using `hide_hamburger_menu()`.
 
-- **User Input & Display:**  
+- User Input & Display: 
   - Captures user queries via `st.chat_input()`.
   - Displays conversation history using `st.chat_message()`.
   - Implements a **reset conversation** feature.
 
-- **Multilingual Support:**  
+- Multilingual Support: 
   - Uses `GoogleTranslator` for translation if the selected language is not English.
 
----
-
-### **2. AI Processing & Response Module (Backend)**
+2. AI Processing & Response Module (Backend):
 This module handles the chatbot’s logic and response generation.
 
-- **Memory Management:**  
+-Memory Management:
   - Uses `ConversationBufferWindowMemory` to store conversation history.
 
-- **Retrieval-Augmented Generation (RAG) Setup:**  
+-Retrieval-Augmented Generation (RAG) Setup: 
   - Loads legal documents, splits them into chunks (`RecursiveCharacterTextSplitter`), and stores them in a **FAISS vector database** for retrieval.  
   - Retrieves relevant documents to provide **context-aware responses**.
 
-- **Response Generation:**  
+- Response Generation:  
   - **Online Mode:** Uses Google's `Gemini 1.5 Pro` to generate responses.  
   - **Offline Mode:** Uses `ChatOllama` with the `"phi3"` model (not fully implemented).  
   - The chatbot follows strict response formatting (e.g., bullet points, clarity, relevant links).
 
----
-
-### **3. Integration & API Module**
+3. Integration & API Module:
 This module connects external models and services.
 
-- **Google Gemini API:**  
+-Google Gemini API: 
   - Generates responses using `genai.GenerativeModel('gemini-1.5-pro')`.
 
-- **FAISS Vector Search:**  
+- FAISS Vector Search: 
   - Uses `HuggingFaceEmbeddings` (`law-ai/InLegalBERT`) to embed and search legal documents efficiently.
 
-- **Deep Translator API:**  
+- Deep Translator API: 
   - Uses `GoogleTranslator` for multilingual support.
 
-- **Miscellaneous Functions:**  
+- Miscellaneous Functions:  
   - `reset_conversation()`: Clears chat history.  
   - `footer()`: Adds a footer for UI consistency.
 
----
-
-### **Summary**
+Summary:
 1. **Frontend (UI & Interaction):** User-friendly Streamlit interface with multilingual support.  
 2. **Backend (AI Processing & Response):** Uses FAISS vector search, memory, and API-based model responses.  
 3. **Integration (APIs & External Services):** Connects to Google Gemini, FAISS, and translation APIs.
-
-This structure makes the chatbot **efficient, context-aware, and legally accurate** while being user-friendly. 🚀
