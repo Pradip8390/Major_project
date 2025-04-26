@@ -27,8 +27,7 @@ This module handles the chatbot’s logic and response generation.
   - Retrieves relevant documents to provide **context-aware responses**.
 
 - Response Generation:  
-  - **Online Mode:** Uses Google's `Gemini 1.5 Pro` to generate responses.  
-  - **Offline Mode:** Uses `ChatOllama` with the `"phi3"` model (not fully implemented).  
+  - Uses Google's `Gemini 1.5 Pro` to generate responses.    
   - The chatbot follows strict response formatting (e.g., bullet points, clarity, relevant links).
 
 3. Integration & API Module:
@@ -48,6 +47,6 @@ This module connects external models and services.
   - `footer()`: Adds a footer for UI consistency.
 
 Summary:
-1. **Frontend (UI & Interaction):** User-friendly Streamlit interface with multilingual support.  
-2. **Backend (AI Processing & Response):** Uses FAISS vector search, memory, and API-based model responses.  
-3. **Integration (APIs & External Services):** Connects to Google Gemini, FAISS, and translation APIs.
+1. Frontend (UI & Interaction):** User-friendly Streamlit interface with multilingual support.  
+2. Backend (AI Processing & Response):** Uses FAISS vector search, memory, and API-based model responses.  
+3. Integration (APIs & External Services):** Connects to Google Gemini, FAISS, and translation APIs.
