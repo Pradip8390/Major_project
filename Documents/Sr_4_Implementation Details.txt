@@ -1,49 +1,87 @@
-Your AI chatbot for the Department of Justice website can be broken down into three key modules:
+# Methodology
 
-1. User Interface & Interaction Module (Frontend)
-This module is responsible for the chatbot's appearance and user interaction.
+1) Hardware and Software requirement:
 
--Streamlit UI Setup:
-  - Configures the chatbot’s layout (`st.set_page_config()`, `st.header()`).
-  - Sidebar contains options like "Online Mode" toggle and language selection.
-  - Hides Streamlit’s default UI elements using `hide_hamburger_menu()`.
+# Hardware requirement:
 
--User Input & Display:  
-  - Captures user queries via `st.chat_input()`.
-  - Displays conversation history using `st.chat_message()`.
-  - Implements a **reset conversation** feature.
+Processor - Intel i5 or equivalent
+RAM - 8 GB
+Storage - 256 GB SSD
+Display - 13 inches or larger display (Full HD)
+Internet Connectivity - Required for API access and deployment
+Optional - GPU (for faster embedding generation)
 
--Multilingual Support:  
-  - Uses `GoogleTranslator` for translation if the selected language is not English.
+# Software requirement:
 
-2. AI Processing & Response Module (Backend)
-This module handles the chatbot’s logic and response generation.
+Operating System - Windows / Linux / macOS
+Programming Language - Python 3.8+
+Frameworks/Libraries - Streamlit, LangChain, HuggingFace, FAISS, Deep-Translator, Google Generative AI
+IDE / Editor - VS Code / PyCharm / Jupyter Notebook
+APIs - Google Gemini (Generative AI) API
+Browser - Chrome / Firefox (for running UI)
 
--Memory Management:  
-  - Uses `ConversationBufferWindowMemory` to store conversation history.
+2) System Design:
 
--Retrieval-Augmented Generation (RAG) Setup:
-  - Loads legal documents, splits them into chunks (`RecursiveCharacterTextSplitter`), and stores them in a FAISS vector database for retrieval.  
-  - Retrieves relevant documents to provide context-aware responses.
++-----------------------------+
+|  User Interface (Streamlit)|
++-----------------------------+
+              ↓
++-----------------------------+
+|  Language Selection Module  |
++-----------------------------+
+              ↓
++-----------------------------+
+|   Translation (Input → EN)  |
+| Deep Translator API         |
++-----------------------------+
+              ↓
++-----------------------------+
+|   Vector Database (FAISS)   |
+|   + Legal Data Embedding    |
++-----------------------------+
+              ↓
++-----------------------------+
+| Generative AI (Gemini Pro)  |
+| + Context Retrieval         |
++-----------------------------+
+              ↓
++-----------------------------+
+| Translation (EN → Output)   |
++-----------------------------+
+              ↓
++-----------------------------+
+|      Response to User       |
++-----------------------------+
 
--Response Generation:  
-  -Online Mode:Uses Google's `Gemini 1.5 Pro` to generate responses.  
-  - Offline Mode: Uses `ChatOllama` with the `"phi3"` model (not fully implemented).  
-  - The chatbot follows strict response formatting (e.g., bullet points, clarity, relevant links).
+3) Algorithm:
 
-3. Integration & API Module
-This module connects external models and services.
+Here's a step-by-step breakdown of the algorithm used:
 
--Google Gemini API:  
-  - Generates responses using `genai.GenerativeModel('gemini-1.5-pro')`.
+1. Start Application via Streamlit interface.
 
--FAISS Vector Search:  
-  - Uses `HuggingFaceEmbeddings` (`law-ai/InLegalBERT`) to embed and search legal documents efficiently.
+2. Display Language Options to the user via sidebar dropdown.
 
--Deep Translator API: 
-  - Uses `GoogleTranslator` for multilingual support.
--Miscellaneous Functions: 
-  - `reset_conversation()`: Clears chat history.  
-  - `footer()`: Adds a footer for UI consistency.
+3. User Inputs Query via chat input box.
 
+4. Translate Input to English if a regional language is selected.
 
+5. Retrieve Context:
+
+   -Break legal text into chunks.
+
+   -Use FAISS vector store to retrieve relevant chunks.
+
+6. Generate Response:
+
+   -Construct prompt with input and context.
+
+   -Use Google Gemini API to generate a response.
+
+7. Translate Output back to user's selected language.
+
+8. Display Response in the chat window.
+
+9. Log Interaction in session memory.
+
+10. Allow Reset Option to clear the session.
+  
