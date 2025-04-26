@@ -174,5 +174,5 @@ def footer():
         </div>
         """, unsafe_allow_html=True)
 
-# Display the footer
+
 footer()
