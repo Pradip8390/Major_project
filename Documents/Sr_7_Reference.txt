@@ -1,0 +1,6 @@
+Reference:
+
+1) DOJ website India: https://doj.gov.in/
+2) Streamlit Documentation : https://docs.streamlit.io/
+3) Gemini api : https://ai.google.dev/gemini-api/docs/api-key
+4) Research Paper: https://www.ojp.gov/ncjrs/virtual-library/abstracts/chatbots-criminal-justice-system
