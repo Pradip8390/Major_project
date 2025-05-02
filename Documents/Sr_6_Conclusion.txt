@@ -1,3 +1,132 @@
-Conclusion:
-
-The NyayaBot project is a robust AI-powered chatbot designed specifically for the Department of Justice (DoJ) website to assist users in navigating legal information and services. Developed using Streamlit for the front-end interface and powered by Google's Gemini model through the LangChain framework, the chatbot delivers intelligent and context-aware responses based on the Indian Penal Code and other relevant legal texts. It incorporates a secure login system to restrict access, ensuring that only authenticated users can interact with the application. One of its standout features is multilingual support, enabling users to converse in their preferred Indian language, thanks to the integration of the Google Translator API. Legal documents are processed and embedded using the HuggingFace InLegalBERT model, and stored in a FAISS vector store, allowing the chatbot to retrieve semantically relevant legal content in response to user queries. A memory buffer tracks recent conversation history, enhancing the bot's ability to maintain context over a dialogue. The interface is clean and user-friendly, with helpful features like conversation reset and a visually engaging sidebar. Overall, NyayaBot offers a smart, accessible, and inclusive way for users to obtain legal guidance, making justice-related information more approachable and user-centric.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NyayaBot Project Conclusion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Conclusion</h2>
+        <p>
+            The NyayaBot project is a robust AI-powered chatbot designed specifically for the Department of Justice (DoJ) website to assist users in navigating legal information and services. Developed using Streamlit for the front-end interface and powered by Google's Gemini model through the LangChain framework, the chatbot delivers intelligent and context-aware responses based on the Indian Penal Code and other relevant legal texts. It incorporates a secure login system to restrict access, ensuring that only authenticated users can interact with the application.
+        </p>
+        <p>
+            One of its standout features is multilingual support, enabling users to converse in their preferred Indian language, thanks to the integration of the Google Translator API. Legal documents are processed and embedded using the HuggingFace InLegalBERT model, and stored in a FAISS vector store, allowing the chatbot to retrieve semantically relevant legal content in response to user queries. A memory buffer tracks recent conversation history, enhancing the bot's ability to maintain context over a dialogue.
+        </p>
+        <p>
+            The interface is clean and user-friendly, with helpful features like conversation reset and a visually engaging sidebar. Overall, NyayaBot offers a smart, accessible, and inclusive way for users to obtain legal guidance, making justice-related information more approachable and user-centric.
+        </p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NyayaBot Project Conclusion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Conclusion</h2>
+        <p>
+            The NyayaBot project is a robust AI-powered chatbot designed specifically for the Department of Justice (DoJ) website to assist users in navigating legal information and services. Developed using Streamlit for the front-end interface and powered by Google's Gemini model through the LangChain framework, the chatbot delivers intelligent and context-aware responses based on the Indian Penal Code and other relevant legal texts. It incorporates a secure login system to restrict access, ensuring that only authenticated users can interact with the application.
+        </p>
+        <p>
+            One of its standout features is multilingual support, enabling users to converse in their preferred Indian language, thanks to the integration of the Google Translator API. Legal documents are processed and embedded using the HuggingFace InLegalBERT model, and stored in a FAISS vector store, allowing the chatbot to retrieve semantically relevant legal content in response to user queries. A memory buffer tracks recent conversation history, enhancing the bot's ability to maintain context over a dialogue.
+        </p>
+        <p>
+            The interface is clean and user-friendly, with helpful features like conversation reset and a visually engaging sidebar. Overall, NyayaBot offers a smart, accessible, and inclusive way for users to obtain legal guidance, making justice-related information more approachable and user-centric.
+        </p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NyayaBot Project Conclusion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Conclusion</h2>
+        <p>
+            The NyayaBot project is a robust AI-powered chatbot designed specifically for the Department of Justice (DoJ) website to assist users in navigating legal information and services. Developed using Streamlit for the front-end interface and powered by Google's Gemini model through the LangChain framework, the chatbot delivers intelligent and context-aware responses based on the Indian Penal Code and other relevant legal texts. It incorporates a secure login system to restrict access, ensuring that only authenticated users can interact with the application.
+        </p>
+        <p>
+            One of its standout features is multilingual support, enabling users to converse in their preferred Indian language, thanks to the integration of the Google Translator API. Legal documents are processed and embedded using the HuggingFace InLegalBERT model, and stored in a FAISS vector store, allowing the chatbot to retrieve semantically relevant legal content in response to user queries. A memory buffer tracks recent conversation history, enhancing the bot's ability to maintain context over a dialogue.
+        </p>
+        <p>
+            The interface is clean and user-friendly, with helpful features like conversation reset and a visually engaging sidebar. Overall, NyayaBot offers a smart, accessible, and inclusive way for users to obtain legal guidance, making justice-related information more approachable and user-centric.
+        </p>
+    </div>
+</body>
+</html>
