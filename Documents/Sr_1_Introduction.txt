@@ -1,4 +1,4 @@
-1)Introduction-->
+1)Introduction:
 
 The Importance of an AI-Based Interactive Chatbot for the Department of Justice Website
 
@@ -8,11 +8,11 @@ In this digital era, integrating technology into justice systems is no longer op
 
 An AI-powered chatbot serves as a virtual legal assistant, available 24/7, capable of interacting with users through natural language processing (NLP) to understand queries and provide relevant, accurate information. It functions as a bridge between complex legal systems and the everyday user, making legal information more accessible, understandable, and actionable for the general public.
 
-2)Problem Statement-->
+2)Problem Statement:
 
 Accessing legal information and services through traditional means can be time-consuming, complicated, and often requires expert assistance. Many individuals struggle to find accurate and timely responses to their legal questions, leading to misinformation or delayed action. The Department of Justice website contains a wealth of information, but users may find it overwhelming or difficult to navigate. Therefore, a solution is needed to simplify access to legal resources, improve user engagement, and provide immediate assistance.
 
-3)Objectives-->
+3)Objectives:
 
 Enhance Accessibility: Provide users with an easy-to-use platform to access legal information.
 
@@ -24,7 +24,7 @@ User Engagement: Offer an interactive and user-friendly experience.
 
 24/7 Availability: Ensure round-the-clock support without human intervention.
 
-4)Application-->
+4)Application:
 
 Legal Information Retrieval: Users can ask questions related to legal rights, processes, and policies.
 
