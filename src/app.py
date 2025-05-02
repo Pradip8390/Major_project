@@ -10,7 +10,7 @@ import google.generativeai as genai
 
 st.set_page_config(page_title="NyayaBot", layout="wide")
 
-# --- LOGIN SYSTEM ---
+# --- LOGIN SYSTEM -----------
 USER_CREDENTIALS = {
     "admin": "password123",
     "user": "justice123"
